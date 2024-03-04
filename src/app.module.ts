@@ -5,6 +5,7 @@ import { DataSourceConfig } from './config/data.source';
 import { UserModule } from './user/user.module';
 import { AuthJwtModule } from './auth-jwt/auth-jwt.module';
 import { SendMailModule } from './send-mail/send-mail.module';
+import { NotificationModule } from './notification/notification.module';
 
 @Module({
   imports: [
@@ -12,7 +13,8 @@ import { SendMailModule } from './send-mail/send-mail.module';
     TypeOrmModule.forRoot(DataSourceConfig),
     UserModule,
     AuthJwtModule,
-    SendMailModule
+    SendMailModule,
+    NotificationModule
   ],
   controllers: [],
   providers: []
